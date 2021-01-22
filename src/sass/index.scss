@@ -1,0 +1,419 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+hr,
+ul,
+ol,
+td,
+input,
+option,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+// 头部开始
+.top {
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 110px;
+        display: block;
+    }
+}
+
+.dao {
+    width: 100%;
+    height: 62px;
+    background-color: #232323;
+
+    .dao1 {
+        width: 1018px;
+        height: 62px;
+        margin: 0 auto;
+
+        img {
+            float: left;
+        }
+
+        .nav {
+            width: 604px;
+            height: 62px;
+            float: right;
+            // margin-top: 22px;
+            padding-left: 31px;
+
+            a {
+                color: white;
+                font-size: 12px;
+            }
+
+            li {
+                float: left;
+                height: 62px;
+                line-height: 62px;
+                padding: 0 10px;
+                border-right: 1px solid #444444;
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li:hover {
+                background-color: red;
+            }
+
+            .ke {
+                position: relative;
+
+                .la {
+                    width: 750px;
+                    height: 30px;
+                    background-color: red;
+                    position: absolute;
+                    z-index: 90000;
+                    left: -34px;
+                    top: 62px;
+                    line-height: 30px;
+                    display: none;
+
+                    a {
+                        font-size: 14px;
+                        padding: 0 9px;
+                    }
+                }
+            }
+
+            .ke:hover .la {
+                display: block;
+            }
+
+            .ke:hover .la a:hover {
+                color: #e0c9c9;
+            }
+        }
+    }
+}
+
+// 头部结束
+
+
+// 轮播图开始
+.swiper-container {
+    width: 100%;
+    height: 420px;
+    img {
+        width: 100%;
+        height: 420px;
+        z-index: 1;
+    }
+}
+
+// 轮播图结束
+
+// 移动产业开始
+.yid {
+    background-color: #f5f5f5;
+    overflow: hidden;
+    width: 100%;
+    height: 351px;
+
+    .yi {
+        width: 1018px;
+        margin: 0 auto;
+
+        .yi1 {
+            height: 288px;
+            width: 1040px;
+            margin-top: 36px;
+
+            .yi2 {
+                width: 260px;
+                height: 288px;
+                position: relative;
+                float: left;
+
+                img {
+                    // margin-top: 21px;
+                    // margin-left: 104px;
+                    position: absolute;
+                    top: 21px;
+                    left: 104px;
+                    transition: all .3s;
+                }
+
+                h3 {
+                    text-align: center;
+                    padding-top: 125px;
+                    transition: all .4s;
+                }
+
+                .yi3 {
+                    text-align: center;
+                    font-size: 12px;
+                    color: #546c7d;
+                    padding-top: 19px;
+                }
+
+                h4 {
+                    font-weight: 200;
+                    font-size: 12px;
+                    color: #a3bccd;
+                    text-align: center;
+                    line-height: 19px;
+                }
+
+                .chan {
+                    width: 260px;
+                    height: 288px;
+                    background: rgba($color: #ccc, $alpha: 0.3);
+                    position: absolute;
+                    top: 288px;
+                    left: 0;
+                    opacity: 0;
+                    transition: all .2s;
+                }
+            }
+
+            .yi2:hover .tu {
+                top: -130px;
+                // left: 0;
+            }
+
+            .yi2:hover .chan {
+                opacity: 1;
+                top: 0;
+                left: 0;
+            }
+
+            .yi2:hover h3 {
+                color: skyblue;
+            }
+
+            .yi2:nth-child(2):hover h3 {
+                color: green;
+            }
+
+            .yi2:nth-child(3):hover h3 {
+                color: pink;
+            }
+
+            .yi2:nth-child(4):hover h3 {
+                color: orange;
+            }
+        }
+    }
+}
+
+// 移动产业结束
+
+// 新闻开始
+.new {
+    width: 1018px;
+    margin: 0 auto;
+
+    .new1 {
+        height: 227px;
+        width: 100%;
+        padding-bottom: 43px;
+        padding-top: 42px;
+
+        img {
+            float: left;
+            display: block;
+            border: 1px solid #dcdedf;
+        }
+
+        .new2 {
+            height: 227px;
+            width: 334px;
+            float: left;
+            border-right: 1px solid #dcdedf;
+            margin-left: 16px;
+
+            .new2-1 {
+                height: 115px;
+                width: 321px;
+                border-bottom: 1px dashed #dcdedf;
+
+                h4 {
+                    color: #222222;
+                    font-size: 18px;
+                    padding-top: 6px;
+                }
+
+                .p1 {
+                    font-size: 16px;
+                    transition: all .3s;
+                    color: #444444;
+                }
+
+                .p1:hover {
+                    color: red;
+                }
+
+                .p2 {
+                    margin-top: 12px;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+
+            .new2-2 {
+                height: 115px;
+                width: 321px;
+
+                li:first-child {
+                    margin-top: 10px;
+                }
+
+                li {
+                    background: url(../img/dian.jpg) no-repeat left center;
+                    text-indent: 10px;
+                    line-height: 26px;
+
+                    a {
+                        font-size: 13px;
+                        color: black;
+                        transition: all .3s;
+                    }
+                    a:hover{
+                        color: red;
+                    }
+                }
+
+            }
+        }
+
+        .new3 {
+            height: 227px;
+            width: 334px;
+            float: left;
+            margin-left: 16px;
+
+            h3 {
+                padding-top: 6px;
+                font-size: 18px;
+                padding-bottom: 13px;
+            }
+
+            .new3-1 {
+                padding-top: 40px;
+                font-size: 19px;
+                color: #666666;
+            }
+
+            p {
+                font-size: 11px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+// 新闻结束
+
+// 走进千锋开始
+.bei {
+    background-color: #222222;
+
+    .zou {
+        width: 1018px;
+        margin: 0 auto;
+        height: 212px;
+        overflow: hidden;
+        .zou1 {
+            width: 623px;
+            overflow: hidden;
+            margin-top: 50px;
+            height: 164px;
+            float: left;
+            // border: 1px solid blue;
+            ul:first-child {
+                margin-left: 10px;
+            }
+
+            ul {
+                float: left;
+                margin-right: 42px;
+
+                li {
+                    line-height: 24px;
+                    font-size: 12px;
+
+                    a {
+                        color: #999999;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+
+                li:first-child {
+                    color: white;
+                    padding-bottom: 17px;
+                }
+            }
+
+        }
+        .wei{
+            width: 191px;
+            height: 212px;
+            margin-right: 5px;
+            float: left;
+            img:first-child{
+                margin-right: 26px;
+            }
+            img{
+                margin-top: 21px;
+            }
+            p{
+                text-align: center;
+                color: #464646;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// 走进千锋结束
+
+
+// 尾部开始
+.footer{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: #101010;
+    color:#999999;
+    text-align: center;
+    font-size: 12px;
+}
+//尾部结束
